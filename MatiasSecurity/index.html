@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.A.T.I.A.S. AI Security</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo-area">
+            <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="logo-text">
+                <h1>M.A.T.I.A.S</h1>
+                <span>AI SECURITY</span>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="nav-item active"><i class="fa-solid fa-house"></i> Inicio</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-clock-rotate-left"></i> Historial</a>
+            <a href="#" class="nav-item"><i class="fa-solid fa-graduation-cap"></i> Educación</a>
+           
+        </nav>
+        <div class="user-actions">
+             <a href="#" class="nav-item"><i class="fa-solid fa-circle-info"></i> Acerca de</a>
+        </div>
+    </header>
+
+    <div class="dashboard-container">
+        
+        <aside class="sidebar-left">
+            <div class="sidebar-card assistant-card">
+                <h3><i class="fa-solid fa-shield-heart"></i> ASISTENTE M.A.T.I.A.S</h3>
+                <div class="avatar-placeholder" style="border: none; background: transparent; height: auto;">
+    <img src="./avatar-matias.png" alt="M.A.T.I.A.S Asistente" style="width: 100%; max-height: 220px; object-fit: contain;">
+            </div>
+                <div class="chat-bubble">
+                    <p>¡Hola! Soy Matias, tu asistente de seguridad digital. Estoy aquí para ayudarte a navegar seguro. </p>
+                </div>
+            </div>
+
+            <div class="sidebar-card tips-card">
+                <h3><i class="fa-regular fa-lightbulb"></i> CONSEJO DE SEGURIDAD</h3>
+                <p>Antes de hacer clic en cualquier enlace, verifica siempre la URL. Pequeños detalles pueden hacer una gran diferencia en tu seguridad.</p>
+              <div class="avatar-mini-placeholder" style="background: transparent; border: none; width: 110px; height: 110px; margin: 5px auto; display: flex; justify-content: center; align-items: center;">
+                <img src="./consejo-matias.png" alt="M.A.T.I.A.S Consejo" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+        </aside>
+
+        <main class="main-content">
+            
+            <section class="hero-section">
+                <div class="hero-text">
+                    <h2>M.A.T.I.A.S</h2>
+                    <h3>MONITOR DE AMENAZAS TECNOLÓGICAS</h3>
+                    <p class="subtitle">CON INTELIGENCIA ARTIFICIAL Y SEGURIDAD</p>
+                    
+                    <div class="info-alert">
+                        <i class="fa-solid fa-shield-halved alert-icon"></i>
+                        <div>
+                            <strong>Protegemos lo que más importa: tu información.</strong>
+                            <p>Analizamos enlaces en tiempo real para detectar amenazas de phishing y sitios maliciosos.</p>
+                        </div>
+                    </div>
+                <div class="hero-image-pane" style="position: relative; display: flex; align-items: flex-end; justify-content: center; min-height: 260px;">
+                <div class="lock-glow" style="position: absolute; top: 30%; left: 50%; transform: translate(-50%, -50%); z-index: 1;"><i class="fa-solid fa-lock"></i></div>
+                <img src="./hero-matias.png" alt="M.A.T.I.A.S Monitor" style="width: auto; height: 260px; object-fit: contain; position: relative; z-index: 2;">
+            </div>
+                </div>
+            </section>
+
+            <section class="analyzer-card">
+                <h3>ANALIZA UN ENLACE</h3>
+                <label for="url-input">Ingresa la URL que deseas analizar</label>
+                <div class="input-group">
+                    <span class="input-icon"><i class="fa-solid fa-link"></i></span>
+                    <input type="text" id="url-input" placeholder="https://ejemplo.com">
+                    <button class="btn-analyze" onclick="analizarEnlace()"></button>
+                </div>
+                <p class="helper-text">Nuestro sistema verificará la seguridad del enlace y te dará un resultado detallado.</p>
+            </section>
+
+            <section class="counters-grid">
+                <div class="counter-card">
+                    <div class="counter-icon blue"><i class="fa-solid fa-globe"></i></div>
+                    <div class="counter-data">
+                        <span class="number">1,248</span>
+                        <span class="label">URLs analizadas</span>
+                        <span class="sublabel">Total general</span>
+                    </div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-icon green"><i class="fa-solid fa-shield-check"></i></div>
+                    <div class="counter-data">
+                        <span class="number">892</span>
+                        <span class="label">Sitios seguros</span>
+                        <span class="sublabel green-text">71.5% del total</span>
+                    </div>
+                </div>
+                <div class="counter-card">
+                    <div class="counter-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <div class="counter-data">
+                        <span class="number">0</span>
+                        <span class="label">Posibles amenazas</span>
+                        <span class="sublabel red-text">0% del total</span>
+                    </div>
+                </div>              
+                <div class="counter-card">
+                    <div class="counter-icon red-pulse"><i class="fa-regular fa-clock"></i></div>
+                    <div class="counter-data">
+                        <span class="number">24/7</span>
+                        <span class="label">Protección activa</span>
+                        <span class="sublabel">Monitoreo continuo</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h3>¿POR QUÉ USAR M.A.T.I.A.S.?</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <i class="fa-solid fa-shield-virus"></i>
+                        <div>
+                            <h4>Detección Inteligente</h4>
+                            <p>Algoritmos avanzados que identifican patrones de phishing y amenazas.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div>
+                            <h4>Educación Continua</h4>
+                            <p>Aprende sobre ciberseguridad y técnicas utilizadas por ciberdelincuentes.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-bolt"></i>
+                        <div>
+                            <h4>Análisis en Tiempo Real</h4>
+                            <p>Resultados instantáneos para que navegues siempre protegido.</p>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fa-solid fa-lock"></i>
+                        <div>
+                            <h4>Privacidad Garantizada</h4>
+                            <p>Tu información está segura. No almacenamos tus datos personales.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="sidebar-right">
+            <div class="ai-badge">
+                <i class="fa-solid fa-brain"></i>
+                <div>
+                    <h4>Inteligencia Artificial</h4>
+                    <p>Análisis avanzado 24/7</p>
+                </div>
+            </div>
+
+            <div class="summary-card">
+                <div class="summary-header">
+                    <h3>RESUMEN DE SEGURIDAD</h3>
+                    <select class="dropdown-period">
+                        <option>Este mes</option>
+                    </select>
+                </div>
+                
+                <ul class="summary-list">
+                    <li>
+                        <span class="bullet-icon blue"><i class="fa-solid fa-globe"></i></span>
+                        <div class="list-info"><span>Enlaces analizados</span><strong>0</strong></div>
+                    </li>
+                    <li>
+                        <span class="bullet-icon green"><i class="fa-solid fa-shield-check"></i></span>
+                        <div class="list-info"><span>Sitios seguros</span><strong class="green-text">0</strong></div>
+                    </li>
+                    <li>
+                        <span class="bullet-icon yellow"><i class="fa-solid fa-triangle-exclamation"></i></span>
+                        <div class="list-info"><span>Posibles amenazas</span><strong class="yellow-text">0</strong></div>
+                    </li>
+                    <li>
+                        <span class="bullet-icon red"><i class="fa-regular fa-clock"></i></span>
+                        <div class="list-info"><span>Protección activa</span><strong>24/7</strong></div>
+                    </li>
+                </ul>
+                <a href="#" class="view-more-link">Ver dashboard completo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <div class="summary-card recent-activity">
+                <h3>ACTIVIDAD RECIENTE</h3>
+                <ul class="activity-list">
+                    <li>
+                        <span class="status-icon green"><i class="fa-solid fa-user-shield"></i></span>
+                        <div class="activity-details">
+                            <span class="url">https://ejemplo-seguro.com</span>
+                            <span class="status green-text">Seguro</span>
+                        </div>
+                        <span class="time">10:45 AM</span>
+                    </li>
+                    <li>
+                        <span class="status-icon red"><i class="fa-solid fa-user-ninja"></i></span>
+                        <div class="activity-details">
+                            <span class="url">http://verificacion-login.com</span>
+                            <span class="status red-text">Posible Phishing</span>
+                        </div>
+                        <span class="time">09:32 AM</span>
+                    </li>
+                    <li>
+                        <span class="status-icon green"><i class="fa-solid fa-user-shield"></i></span>
+                        <div class="activity-details">
+                            <span class="url">https://tienda-online.com</span>
+                            <span class="status green-text">Seguro</span>
+                        </div>
+                        <span class="time">Ayer, 08:15 PM</span>
+                    </li>
+                </ul>
+                <a href="#" class="view-more-link">Ver historial completo <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </aside>
+    </div>
+
+    <footer class="main-footer">
+        <p><i class="fa-solid fa-shield-halved"></i> M.A.T.I.A.S AI Security © 2025 | Monitor de Amenazas Tecnológicas con Inteligencia Artificial y Seguridad</p>
+    </footer>
+
+</body>
+<script>
+        function analizarEnlace() {
+            // Buscamos cualquier cuadro de entrada de texto (input) que esté dentro del área del analizador
+            const inputUrl = document.querySelector('input[type="text"]') || document.querySelector('.main-content input');
+            const btnAnalizar = document.querySelector('.btn-analyze');
+            
+            // Si el cuadro está vacío o solo tiene espacios
+            if (!inputUrl || inputUrl.value.trim() === "") {
+                alert("Por favor, ingresa una URL válida para analizar.");
+                return;
+            }
+
+            // Cambiamos el botón para mostrar que el asistente M.A.T.I.A.S está escaneando
+            btnAnalizar.disabled = true;
+            btnAnalizar.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> ANALIZANDO...';
+
+            // Simulamos el tiempo de escaneo tecnológico (3 segundos)
+            setTimeout(() => {
+                const urlText = inputUrl.value.toLowerCase();
+                
+                // Reglas de seguridad automáticas de M.A.T.I.A.S
+                if (urlText.includes('login') || urlText.includes('banco') || urlText.includes('verificacion') || urlText.includes('actualizar-datos')) {
+                    alert("⚠️ ALERTA M.A.T.I.A.S. - ¡CHE, OJO!\n\nEl enlace '" + inputUrl.value + "' se esta haciendo pasar por otra persona para chorearte tus datos o contraseñas. ¡No pongas tus datos personales ni tus contraseñas, ni en pedo!");
+                } else {
+                    alert("✅ MONITOREO M.A.T.I.A.S. - ENLACE SEGURO\n\nNo se detectaron anomalías ni amenazas de Phishing en '" + inputUrl.value + "'. Podes navegar con tranquilidad.");
+                }
+
+                // Restauramos el botón a su diseño original rojoss
+                btnAnalizar.disabled = false;
+                btnAnalizar.innerHTML = '<i class="fa-solid fa-magnifying-glass"></i> ANALIZAR';
+                
+                // Limpiamos la caja para el siguiente enlace
+                inputUrl.value = "";
+            }, 3000);
+        }
+    </script>
+</html>
